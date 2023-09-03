@@ -67,7 +67,48 @@ Install dependencies
 
 ## Usage
 
-How to start
+Clone this repository and create data and figures directories on root.
+
+```sh
+git clone https://github.com/luanakiefer/AcousticWavePropagation
+cd AcousticWavePropagation
+
+mkdir data
+mkdir figures
+```
+
+At **downloadHycom.sh** define the date and the section of the measurement
+
+```sh
+# downloadHycom.sh
+
+...
+
+yyyy="YEAR"
+mm="MONTH"
+dd="DAY"
+
+north="NORTHERNMOST LATITUDE"
+south="SOUTHERNMOST LATITUDE"
+east="EASTERNMOST LONGITUDE"
+west="WESTNMOST LONGITUDE"
+
+...
+```
+
+Guarantee that the choosen date matches the filename defined at **main.m**
+
+```m
+% main.m
+
+clear all
+close all
+clc
+
+fileName = "./data/hycom_YYYYMMDD.nc";
+
+...
+```
 
 ### Topics
 
