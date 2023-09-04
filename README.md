@@ -110,6 +110,14 @@ fileName = "./data/hycom_YYYYMMDD.nc";
 ...
 ```
 
+Add **m_map** package to MATLAB path
+
+```m
+% At MATLAB terminal
+
+addpath("./m_map")
+```
+
 ### Topics
 
 Subroutine explanation
